@@ -1,0 +1,18 @@
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo"><i class="fab fa-app-store fa-2x"></i></a>
+      <ul class="right hide-on-med-and-down">
+      <li> <%= link_to 'Shop', shops_path %> </li>
+      <!--  <li><a class="waves-effect waves-light btn">Button</a></li> -->
+        <li><%= button_to "Log Out", destroy_user_session_path, method: :delete, class: 'btn-large' %></li>
+        <li><button class="waves-effect waves-light btn-large">
+             <%= link_to root_path do %>
+            <i class="fas fa-shopping-cart"></i>
+            <% end %>
+        </button></li>
+
+    
+      </ul>
+    </div>
+  </nav>

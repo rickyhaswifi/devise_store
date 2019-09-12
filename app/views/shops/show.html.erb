@@ -1,0 +1,9 @@
+<h1>Shops#show</h1>
+<p>Find me in app/views/shops/show.html.erb</p>
+
+<%= @shop.name %>
+$<%= @shop.price %>
+
+<%= link_to 'Back', root_path %> |
+<%= link_to 'Update Shop Item Details', edit_shop_path %> |
+<%= link_to 'Delete', @shop, method: :delete %>

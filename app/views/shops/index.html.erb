@@ -1,0 +1,26 @@
+<h1>Shops#index</h1>
+<p>Find me in app/views/shops/index.html.erb</p>
+
+ <table class="highlight">
+        <thead>
+          <tr>
+              <th>Item Name</th>
+              <th>Item Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @shops.each do |s| %>
+          <tr>
+            <td><%= link_to s.name, s %></td>
+            <td>$<%= s.price%></td>
+          </tr>
+            <% end %>
+           <!--  <tr>
+            <td><b>Total</b></td>
+            <td><b>$<%= Cart.sum(:price) %></b></td>
+          </tr> -->
+        </tbody>
+      </table>
+
+<%= link_to 'Add Shop Item', new_shop_path %>

@@ -1,0 +1,8 @@
+<h1>Cart Item Details</h1>
+
+<%= @cart.name %>
+$<%= @cart.price %>
+
+<%= link_to 'Back', root_path %> |
+<%= link_to 'Update Cart Item Details', edit_cart_path %> |
+<%= link_to 'Delete', @cart, method: :delete %>

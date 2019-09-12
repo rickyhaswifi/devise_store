@@ -1,0 +1,15 @@
+<%= form_for @cart do |f| %>
+    <div class="form">
+        <div class="form-item mb-3">
+            <%= f.label :name %>
+            <%= f.text_field :name, class: 'form-control' %>
+        </div>
+        <div class="form-item mb-3">
+            <%= f.label :price %>
+            <%= f.text_field :price, class: 'form-control' %>
+        </div>
+        <div class="form-item mb-3">
+            <%= f.submit%>
+        </div>
+  </div>
+<% end %>
